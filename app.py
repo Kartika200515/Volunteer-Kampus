@@ -542,3 +542,5 @@ def changestud(student_id):
             return render_template('profileStud.html', stud=student,message=message)
 
     return render_template('changestud.html', student_id=student_id)
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=5000)
