@@ -1,0 +1,12 @@
+@startuml
+actor Professor
+Professor -> Dashboard : klik "Create Post"
+Dashboard -> Flask App : GET /create
+Flask App --> Professor : tampilkan form
+
+Professor -> Form : isi judul, deskripsi
+Form -> Flask App : POST /create
+Flask App -> Database : simpan data post
+Database --> Flask App : success
+Flask App --> Professor : redirect ke dashboard
+@enduml
