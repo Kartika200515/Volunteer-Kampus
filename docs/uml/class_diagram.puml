@@ -1,0 +1,37 @@
+@startuml
+class Student {
+  + id: int
+  + name: str
+  + email: str
+  + password: str
+  + about: str
+}
+
+class Professor {
+  + id: int
+  + name: str
+  + email: str
+  + password: str
+}
+
+class Post {
+  + id: int
+  + title: str
+  + description: str
+  + professor_id: int
+  + date_posted: datetime
+  + max_count: int
+  + curr_count: int
+}
+
+class Application {
+  + id: int
+  + student_id: int
+  + post_id: int
+  + status: str
+}
+
+Student "1" --> "many" Application
+Professor "1" --> "many" Post
+Post "1" --> "many" Application
+@enduml

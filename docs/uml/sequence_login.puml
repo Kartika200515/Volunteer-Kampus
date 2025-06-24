@@ -1,0 +1,8 @@
+@startuml
+actor Student
+Student -> Login Page : isi email & password
+Login Page -> Flask App : POST /loginStudent
+Flask App -> Database : validasi kredensial
+Database --> Flask App : status login
+Flask App --> Student : dashboard / error
+@enduml
