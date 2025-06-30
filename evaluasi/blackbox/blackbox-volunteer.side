@@ -120,5 +120,5 @@
     "tests": ["b72b58c3-8f16-4c02-8e24-41817929ac58"]
   }],
   "urls": ["https://fuzzy-spork-5g9gww7qpg9734gx-5000.app.github.dev/"],
-  "plugins": []
+  "plugins": [] 
 }
