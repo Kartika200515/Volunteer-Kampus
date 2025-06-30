@@ -25,7 +25,7 @@ Aplikasi manajemen relawan kampus berbasis web, dibangun menggunakan Python Flas
 
 ## 🔍 Laporan Black-box Testing
 
-**Nama Penguji:** Kartika  
+**Nama Penguji:** Kartika ariyani
 **Tanggal:** 29 Juni 2025  
 **Metode:** Pengujian dilakukan menggunakan Selenium IDE (Firefox)
 
